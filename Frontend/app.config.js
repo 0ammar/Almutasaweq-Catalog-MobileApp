@@ -1,0 +1,54 @@
+import 'dotenv/config';
+
+export default {
+  expo: {
+    name: "UserInterface",
+    slug: "UserInterface",
+    version: "1.0.0",
+    orientation: "portrait",
+    scheme: "myapp",
+    userInterfaceStyle: "automatic",
+    newArchEnabled: true,
+
+    ios: {
+      supportsTablet: true
+    },
+
+    android: {
+      adaptiveIcon: {
+        foregroundImage: "./src/assets/images/logo.png",
+        backgroundColor: "#ffffff"
+      }
+    },
+
+    web: {
+      bundler: "metro",
+      output: "static",
+      favicon: "./src/assets/images/logo.png"
+    },
+
+    plugins: [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          image: "./src/assets/images/logo.png",
+          imageWidth: 200,
+          resizeMode: "contain",
+          backgroundColor: "#ffffff"
+        }
+      ]
+    ],
+
+    experiments: {
+      typedRoutes: true
+    },
+
+    extra: {
+      eas: {
+        projectId: "your-project-id-if-using-eas"
+      },
+      EXPO_PUBLIC_API_URL: process.env.EXPO_PUBLIC_API_URL
+    }
+  }
+};

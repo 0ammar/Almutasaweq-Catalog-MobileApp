@@ -1,0 +1,53 @@
+# React Native / Expo
+node_modules/
+.expo/
+.expo-shared/
+*.apk
+*.log
+*.tmp
+*.swp
+dist/
+build/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Visual Studio
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# .NET / C#
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.cache
+*.db
+*.mdf
+*.ldf
+
+# Configs & secrets
+.env
+.env.*  
+appsettings.Development.json
+appsettings.Production.json
+secrets.json
+
+# Logs
+logs/
+
+# Others
+*.tgz
+*.zip
+*.tar.gz
+.idea/
