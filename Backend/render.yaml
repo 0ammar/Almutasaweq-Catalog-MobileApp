@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: almutasaweq-backend
+    runtime: docker
+    repo: https://github.com/0ammar/Almutasaweq-Catalog-MobileApp
+    branch: master
+    dockerfilePath: Backend/Dockerfile
+    rootDir: Backend
+    plan: free
+    region: frankfurt
+    buildCommand: ""
+    startCommand: "dotnet AlmutasaweqCatalog.dll"

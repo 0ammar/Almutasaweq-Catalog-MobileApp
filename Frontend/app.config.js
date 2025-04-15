@@ -15,8 +15,9 @@ export default {
     },
 
     android: {
+      package: "com.ammar.almutasaweq",
       adaptiveIcon: {
-        foregroundImage: "./src/assets/images/logo.png",
+        foregroundImage: "./src/Assets/images/logo.png",
         backgroundColor: "#ffffff"
       }
     },
@@ -24,7 +25,7 @@ export default {
     web: {
       bundler: "metro",
       output: "static",
-      favicon: "./src/assets/images/logo.png"
+      favicon: "./src/Assets/images/logo.png"
     },
 
     plugins: [
@@ -32,7 +33,7 @@ export default {
       [
         "expo-splash-screen",
         {
-          image: "./src/assets/images/logo.png",
+          image: "./src/Assets/images/logo.png",
           imageWidth: 200,
           resizeMode: "contain",
           backgroundColor: "#ffffff"
@@ -44,9 +45,17 @@ export default {
       typedRoutes: true
     },
 
+    updates: {
+      url: "https://u.expo.dev/008a3683-266a-471c-b6e8-1db6c493eaa7"
+    },
+
+    runtimeVersion: {
+      policy: "appVersion"
+    },
+
     extra: {
       eas: {
-        projectId: "your-project-id-if-using-eas"
+        projectId: "008a3683-266a-471c-b6e8-1db6c493eaa7"
       },
       EXPO_PUBLIC_API_URL: process.env.EXPO_PUBLIC_API_URL
     }
