@@ -8,5 +8,3 @@ services:
     rootDir: Backend
     plan: free
     region: frankfurt
-    buildCommand: ""
-    startCommand: "dotnet AlmutasaweqCatalog.dll"
