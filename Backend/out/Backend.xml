@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Backend</name>
+    </assembly>
+    <members>
+        <member name="M:AlmutasaweqCatalog.Controllers.AdminController.UploadGroupImage(System.Int32,Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Upload an image for a Group category.
+            </summary>
+        </member>
+        <member name="M:AlmutasaweqCatalog.Controllers.AdminController.UploadSubOneImage(System.Int32,Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Upload an image for a SubOne category.
+            </summary>
+        </member>
+        <member name="M:AlmutasaweqCatalog.Controllers.AdminController.UploadSubTwoImage(System.Int32,Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Upload an image for a SubTwo category.
+            </summary>
+        </member>
+        <member name="M:AlmutasaweqCatalog.Controllers.AdminController.UploadSubThreeImage(System.Int32,Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Upload an image for a SubThree category.
+            </summary>
+        </member>
+        <member name="M:AlmutasaweqCatalog.Controllers.AdminController.AddImagesToItem(System.String,Backend.DTOs.Items.UploadImagesDto)">
+            <summary>
+            Add new images and/or description to an existing item.
+            </summary>
+        </member>
+        <member name="M:AlmutasaweqCatalog.Controllers.AdminController.DeleteGroupImage(System.Int32,System.String)">
+            <summary>
+            Delete the image of a Group category.
+            </summary>
+        </member>
+        <member name="M:AlmutasaweqCatalog.Controllers.AdminController.DeleteSubOneImage(System.Int32,System.String)">
+            <summary>
+            Delete the image of a SubOne category.
+            </summary>
+        </member>
+        <member name="M:AlmutasaweqCatalog.Controllers.AdminController.DeleteSubTwoImage(System.Int32,System.String)">
+            <summary>
+            Delete the image of a SubTwo category.
+            </summary>
+        </member>
+        <member name="M:AlmutasaweqCatalog.Controllers.AdminController.DeleteSubThreeImage(System.Int32,System.String)">
+            <summary>
+            Delete the image of a SubThree category.
+            </summary>
+        </member>
+        <member name="M:Backend.Controllers.MainController.GetAllGroups">
+            <summary>
+            Get all available product groups with images.
+            </summary>
+        </member>
+        <member name="M:Backend.Controllers.MainController.GetSubOnesByGroupId(System.Int32)">
+            <summary>
+            Get SubOne categories for a given Group ID.
+            </summary>
+        </member>
+        <member name="M:Backend.Controllers.MainController.GetSubTwosBySubOneId(System.Int32)">
+            <summary>
+            Get SubTwo categories for a given SubOne ID.
+            </summary>
+        </member>
+        <member name="M:Backend.Controllers.MainController.GetSubThreesBySubTwoId(System.Int32)">
+            <summary>
+            Get SubThree categories for a given SubTwo ID.
+            </summary>
+        </member>
+        <member name="M:Backend.Controllers.MainController.SearchItems(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Int32,System.Int32)">
+            <summary>
+            Get All Items By Searching.
+            </summary>
+        </member>
+        <member name="M:Backend.Controllers.MainController.GetItems(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Int32)">
+            <summary>
+            Get All Items.
+            </summary>
+        </member>
+        <member name="M:Backend.Controllers.MainController.GetItemByItemNo(System.String)">
+            <summary>
+            Get full details of a specific item by ItemNo.
+            </summary>
+        </member>
+        <member name="M:Backend.Controllers.MainController.GetItemImage(System.String,System.String)">
+            <summary>
+            Get an image by its item number and image id.
+            </summary>
+        </member>
+        <member name="T:Backend.Migrations.Initial">
+            <inheritdoc />
+        </member>
+        <member name="M:Backend.Migrations.Initial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Backend.Migrations.Initial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Backend.Migrations.Initial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Backend.Migrations.in">
+            <inheritdoc />
+        </member>
+        <member name="M:Backend.Migrations.in.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Backend.Migrations.in.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Backend.Migrations.in.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Backend.Migrations.ApplyImageConstraints">
+            <inheritdoc />
+        </member>
+        <member name="M:Backend.Migrations.ApplyImageConstraints.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Backend.Migrations.ApplyImageConstraints.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Backend.Migrations.ApplyImageConstraints.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Backend.Migrations.EditImageColumn">
+            <inheritdoc />
+        </member>
+        <member name="M:Backend.Migrations.EditImageColumn.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Backend.Migrations.EditImageColumn.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Backend.Migrations.EditImageColumn.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
