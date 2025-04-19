@@ -30,7 +30,6 @@ export const styles = StyleSheet.create({
 
   pickBtnText: {
     color: '#fff',
-    fontWeight: 'bold',
     fontSize: 15,
   },
 
@@ -74,7 +73,6 @@ export const styles = StyleSheet.create({
 
   uploadBtnText: {
     color: '#fff',
-    fontWeight: 'bold',
     fontSize: 15,
   },
 });

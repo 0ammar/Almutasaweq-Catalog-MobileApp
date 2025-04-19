@@ -172,8 +172,11 @@ namespace Backend.Controllers
 		public async Task<IActionResult> GetItemImage(string itemNo, string imageId)
 		{
 			var image = await _itemServices.GetImageByItemNoAndImageIdAsync(itemNo, imageId);
-			if (image == null) return NotFound("Image not found for this item.");
-			return Ok(new { FileName = image });
+			if (image == null)
+				return NotFound("Image not found for this item.");
+
+			var imageUrl = UrlHelper.GetImageUrl(image, Request);
+			return Ok(new { imageUrl });
 		}
 	}
 }

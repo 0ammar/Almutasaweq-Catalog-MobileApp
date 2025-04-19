@@ -6,6 +6,7 @@ import { CategoryGridSection, SearchResults } from '@/Components/Shared';
 import { useGroups, useSearchList } from '@/Hooks';
 import { getItems } from '@/Services/APIs/ItemsServices';
 import { Item } from '@/Types';
+import { View, Text } from 'react-native';
 
 export default function GroupsScreen() {
   const router = useRouter();
@@ -53,13 +54,13 @@ export default function GroupsScreen() {
           : 'Please add some groups first.'
       }
     >
+
       <SearchBar
         value={query}
         onChange={setQuery}
         onSubmit={() => triggerSearch(query)}
         placeholder="Type a name or item number..."
       />
-
       {showSearchResults ? (
         <SearchResults
           items={items}
@@ -68,6 +69,7 @@ export default function GroupsScreen() {
           setPage={setPage}
           origin="/GroupsScreen"
         />
+
       ) : showCategories ? (
         <CategoryGridSection
           data={categories}
@@ -78,6 +80,7 @@ export default function GroupsScreen() {
             })
           }
         />
+
       ) : null}
     </ScreenContainer>
   );

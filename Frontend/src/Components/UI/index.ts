@@ -3,7 +3,7 @@ export { default as LoadingState } from './LoadingState/LoadingState';
 export { default as ItemsGrid } from './ItemsGrid/ItemsGrid';
 export { default as ItemCard } from './ItemCard/ItemCard';
 export { default as CustomAlertModal } from './CustomAlertModal/CustomAlertModal';
-export { default as CategoryComponent } from './CategoryComponent/CategoryComponent'; // ✅ تم التعديل هنا
+export { default as CategoryComponent } from './CategoryComponent/CategoryComponent';
 export { ScreenContainer } from './ScreenContainer/ScreenContainer';
 export { default as PaginationControls } from './PaginationControls/PaginationControls';
 export { default as Header } from './Header/Header';

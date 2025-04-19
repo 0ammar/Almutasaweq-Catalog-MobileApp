@@ -1,14 +1,7 @@
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import Modal from 'react-native-modal';
 import Carousel from 'react-native-reanimated-carousel';
-import {
-  View,
-  Text,
-  Image,
-  Pressable,
-  Dimensions,
-  ActivityIndicator,
-} from 'react-native';
+import { View, Text, Image, Pressable, Dimensions, ActivityIndicator, } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 
@@ -80,7 +73,7 @@ export default function ItemDetailsScreen() {
       >
         <View style={styles.modalContent}>
           <Pressable onPress={handleClose} style={styles.closeButtonAbsolute}>
-            <Ionicons name="close-circle" size={28} color="#c62828" />
+            <Ionicons name="close-circle" size={28} color="#333" />
           </Pressable>
 
           {loading ? (
@@ -108,13 +101,12 @@ export default function ItemDetailsScreen() {
                 />
               )}
 
-              <Text style={styles.name}>{item.name}</Text>
+              <Text style={styles.name }>{item.name}</Text>
               <Text style={styles.code}>{item.itemNo}</Text>
               <Text style={styles.imageCount}>عدد الصور: {images.length}</Text>
-
               <View style={styles.divider} />
               <Text style={styles.description}>{item.description || 'لا يوجد وصف متاح'}</Text>
-
+ 
               <View style={styles.buttonsInline}>
                 <Pressable style={styles.uploadBtn} onPress={handleUpload}>
                   <Text style={styles.uploadBtnText}>تعديل صور</Text>
@@ -127,27 +119,15 @@ export default function ItemDetailsScreen() {
           )}
         </View>
       </Modal>
-
-      {/* Full Image View Modal */}
-      <Modal
-        isVisible={Boolean(selectedImage)}
-        backdropColor="black"
-        backdropOpacity={0.9}
-        onBackdropPress={() => setSelectedImage(null)}
-        onBackButtonPress={() => setSelectedImage(null)}
-        useNativeDriver
-        animationIn="zoomIn"
-        animationOut="fadeOut"
-        style={styles.fullscreenModal}
-      >
+      {selectedImage && fullImageUri && (
         <View style={styles.fullImageWrapper}>
           <Image
-            source={fullImageUri ? { uri: fullImageUri } : fallbackImage}
+            source={{ uri: fullImageUri }}
             style={styles.fullImage}
             resizeMode="contain"
           />
         </View>
-      </Modal>
+      )}
     </>
   );
 }

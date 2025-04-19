@@ -37,7 +37,6 @@ export const getItemByItemNo = async (itemNo: string): Promise<GetItemDto> => {
 };
 
 export const getItemImage = async (itemNo: string, imageId: string): Promise<string> => {
-  const response = await api.get<{ fileName: string }>(`/api/items/${itemNo}/images/${imageId}`);
-  return response.data.fileName;
+  const response = await api.get<{ imageUrl: string }>(`/api/items/${itemNo}/images/${imageId}`);
+  return response.data.imageUrl;
 };
-

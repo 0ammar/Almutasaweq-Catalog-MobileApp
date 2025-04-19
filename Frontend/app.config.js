@@ -16,6 +16,7 @@ export default {
 
     android: {
       package: "com.ammar.almutasaweq",
+      usesCleartextTraffic: true,
       adaptiveIcon: {
         foregroundImage: "./src/Assets/images/logo.png",
         backgroundColor: "#ffffff"

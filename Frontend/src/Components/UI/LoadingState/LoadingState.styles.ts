@@ -12,12 +12,12 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 24,
   },
   animation: {
-    width: width,
-    height: width,
+    width: width / 1.7,
+    height: width / 1.7,
   },
   text: {
-    fontSize: 16,
-    marginTop: -100,
+    fontSize: 14,
+    marginTop: -50,
     color: '#444',
     fontWeight: '500',
     textAlign: 'center',

@@ -1,42 +1,35 @@
-import { StyleSheet, Dimensions } from 'react-native';
-import { colors } from '@/Theme/colors';
+import { StyleSheet, Dimensions } from "react-native";
+import { colors } from "@/Theme/colors";
 
-const { width } = Dimensions.get('window');
+const { width } = Dimensions.get("window");
 const imageSize = width - 60;
 
 export const styles = StyleSheet.create({
-  imageCount: {
-    fontSize: 14,
-    color: '#666',
-    textAlign: 'center',
-    marginTop: 4,
-  },
-    
   modalContent: {
-    width: width - 24,
-    backgroundColor: '#fff',
-    borderRadius: 22,
+    width: width - 34,
+    backgroundColor: "#fff",
+    borderRadius: 20,
     padding: 20,
-    alignSelf: 'center',
-    alignItems: 'center',
+    alignSelf: "center",
+    alignItems: "center",
     elevation: 6,
-    shadowColor: '#000',
+    shadowColor: "#000",
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.1,
     shadowRadius: 10,
   },
 
   closeButtonAbsolute: {
-    position: 'absolute',
-    top: 20,
-    right: 20,
-    backgroundColor: '#fff',
+    position: "absolute",
+    top: 12,
+    right: 12,
+    backgroundColor: "#fff",
     borderRadius: 20,
     padding: 2,
     zIndex: 10,
     elevation: 4,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 1 },
     shadowOpacity: 0.1,
     shadowRadius: 6,
   },
@@ -45,87 +38,94 @@ export const styles = StyleSheet.create({
     width: imageSize,
     height: imageSize,
     borderRadius: 16,
-    backgroundColor: '#f9f9f9',
-    alignSelf: 'center',
+    backgroundColor: "#f9f9f9",
+    alignSelf: "center",
   },
 
   noImage: {
     width: imageSize,
     height: imageSize,
     borderRadius: 16,
-    backgroundColor: '#eee',
-    alignSelf: 'center',
+    backgroundColor: "#eee",
+    alignSelf: "center",
     marginBottom: 10,
   },
 
   name: {
-    fontSize: 18,
-    fontWeight: '700',
+    fontSize: 16,
     color: colors.text,
-    textAlign: 'center',
+    textAlign: "center",
     marginTop: 8,
   },
 
   code: {
     fontSize: 13,
-    fontWeight: '600',
     color: colors.primary,
-    textAlign: 'center',
+    textAlign: "center",
     marginTop: 2,
+  },
+
+  imageCount: {
+    fontSize: 12,
+    color: "#666",
+    textAlign: "center",
+    marginTop: 4,
   },
 
   divider: {
     height: 1,
-    backgroundColor: '#e4e4e4',
-    width: '85%',
+    backgroundColor: "#e4e4e4",
+    width: "85%",
     marginVertical: 12,
   },
 
   description: {
     fontSize: 15,
-    color: '#444',
-    textAlign: 'center',
+    color: "#444",
+    textAlign: "center",
     paddingHorizontal: 12,
     lineHeight: 22,
   },
 
   buttonsInline: {
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-    gap: 80,
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    paddingHorizontal: 15,
     marginTop: 20,
-    width: '100%',
+    width: "100%",
   },
 
   uploadBtn: {
     flex: 1,
-    backgroundColor: colors.primary,
+    backgroundColor: colors.headerBg,
     paddingVertical: 10,
     borderRadius: 30,
+    marginRight: 10,
     elevation: 2,
-  },
-
-  uploadBtnText: {
-    color: '#fff',
-    fontSize: 13,
-    fontWeight: '600',
-    textAlign: 'center',
   },
 
   editBtn: {
     flex: 1,
-    backgroundColor: colors.primary,
+    backgroundColor: colors.headerBg,
     paddingVertical: 10,
     borderRadius: 30,
+    marginLeft: 10,
     elevation: 2,
   },
 
+  uploadBtnText: {
+    fontWeight: "bold",
+    color: "#fff",
+    fontSize: 12,
+    textAlign: "center",
+  },
+
   editBtnText: {
-    color: '#fff',
-    fontSize: 13,
-    fontWeight: '600',
-    textAlign: 'center',
+    fontWeight: "bold",
+    color: "#fff",
+    fontSize: 12,
+    textAlign: "center",
   },
 
   loadingIndicator: {
@@ -135,27 +135,14 @@ export const styles = StyleSheet.create({
   errorText: {
     marginTop: 40,
     fontSize: 14,
-    color: '#999',
-    textAlign: 'center',
-  },
-
-  fullscreenModal: {
-    margin: 0,
-    justifyContent: 'center',
-    alignItems: 'center',
+    color: "#999",
+    textAlign: "center",
   },
 
   fullImageWrapper: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: 'black',
+    width: "100%",
   },
-
   fullImage: {
-    width: '90%',
-    height: '80%',
-    borderRadius: 14,
-    resizeMode: 'contain',
+    width: "100%",
   },
 });
